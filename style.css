@@ -1,0 +1,345 @@
+:root {
+  font-size: 62.5%;
+
+  --background-color: hsl(201, 41%, 82%);
+  --background-color-secondary: hsl(218, 23%, 21%);
+  --background-color-button: hsl(6, 89%, 69%);
+  --background-color-button-hover: hsl(6, 39%, 47%);
+
+  --size-inline-forms: 6.4rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+
+  border: none;
+  box-sizing: border-box;
+
+  text-decoration: none;
+  list-style: none;
+
+  font-size: 1.6rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1,
+legend,
+button {
+  font-family: 'Staatliches', cursive;
+}
+
+legend {
+  font-size: 2.4rem;
+  line-height: 3.4rem;
+
+  color: var(--background-color-secondary);
+}
+
+label {
+  color: hsl(258, 9%, 32%);
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+}
+
+input,
+textarea,
+select {
+  background: #fafafc;
+
+  border: 1px solid #e6e6f0;
+  border-radius: 0.8rem;
+
+  padding: 0.5rem;
+}
+
+span {
+  color: hsl(258, 14%, 77%);
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+span:hover {
+  color: hsl(258, 2%, 46%);
+}
+
+body::before {
+  content: '';
+
+  display: block;
+  width: 100%;
+  height: 46.5rem;
+
+  background: var(--background-color-secondary);
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+body {
+  background: var(--background-color);
+  margin: 0 auto;
+}
+
+header {
+  margin: 10.7rem auto 3.2rem;
+
+  text-align: center;
+
+  color: white;
+}
+
+header h1 {
+  font-weight: 400;
+  font-size: 3.6rem;
+  line-height: 4.5rem;
+}
+
+header p {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+
+  margin-bottom: 1.65rem;
+}
+
+header img {
+  max-width: 22.5rem;
+}
+
+form,
+footer {
+  text-align: center;
+
+  background: white;
+
+  max-width: 75rem;
+
+  margin-inline: auto;
+  border-radius: 2rem 2rem 0 0;
+}
+
+#personalInformation legend {
+  margin-inline: auto;
+
+  padding: 4.98rem;
+  width: 100%;
+
+  border-radius: 2rem 2rem 0 0;
+
+  color: white;
+
+  text-align: center;
+
+  background: var(--background-color-button);
+}
+
+#personalInformation .fullName {
+  padding: 3.166rem var(--size-inline-forms) 0;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 2.2rem;
+
+  width: 100%;
+}
+
+.fullName .partName {
+  display: flex;
+  flex-direction: column;
+
+  gap: 0.793rem;
+
+  align-items: flex-start;
+}
+
+.fullName .partName input {
+  width: 30rem;
+  height: 5.553rem;
+
+  background: #fafafc;
+
+  border: 1px solid #e6e6f0;
+  border-radius: 0.8rem;
+}
+
+#personalInformation .emailBox {
+  padding-inline: var(--size-inline-forms);
+  margin-block: 1.587rem 3.173rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.793rem;
+  align-items: flex-start;
+}
+
+.emailBox label {
+  display: flex;
+  align-items: center;
+  gap: 0.912rem;
+}
+
+.emailBox input {
+  width: 100%;
+  height: 5.553rem;
+}
+
+#mentorInformation {
+  padding-inline: var(--size-inline-forms);
+
+  display: flex;
+  flex-direction: column;
+
+  text-align: start;
+}
+
+#mentorInformation legend {
+  border-bottom: 1px solid #e6e6f0;
+  width: 100%;
+  padding-bottom: 0.8rem;
+  margin-bottom: 3.173rem;
+
+  text-align: center;
+}
+
+#mentorInformation select {
+  margin-block: 0.793rem 3.173rem;
+
+  width: 48.3%;
+  height: 5.53rem;
+}
+
+#mentorInformation textarea {
+  width: 100%;
+  height: 16.659rem;
+
+  margin-block: 0.5rem 2.954rem;
+}
+
+#mentorInformation .checkboxContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+#schedulingNextMentorship {
+  padding-inline: var(--size-inline-forms);
+
+  display: flex;
+
+  margin: 3.6rem auto 0;
+
+  width: 100%;
+}
+
+#schedulingNextMentorship legend {
+  border-bottom: 1px solid #e6e6f0;
+
+  width: 100%;
+
+  padding-bottom: 1rem;
+
+  margin-bottom: 3.1rem;
+}
+
+#schedulingNextMentorship .dateBox,
+#schedulingNextMentorship .hourBox {
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-start;
+}
+
+#schedulingNextMentorship .dateBox {
+  width: 48.3%;
+  margin-right: 3.2rem;
+}
+
+#schedulingNextMentorship .dateBox input {
+  width: 100%;
+}
+
+#schedulingNextMentorship .hourBox {
+  width: 22.6%;
+}
+
+#schedulingNextMentorship .hourBox input {
+  width: 100%;
+}
+
+.hourBox + .hourBox {
+  margin-left: 1rem;
+}
+
+footer {
+  padding: 6.374rem var(--size-inline-forms) 6.4rem;
+
+  border-radius: 0 0 2rem 2rem;
+
+  margin-bottom: 30rem;
+}
+
+footer button {
+  width: 100%;
+
+  border-radius: 8px;
+
+  padding-block: 1.25rem;
+
+  color: white;
+  font-size: 2rem;
+  line-height: 2.6rem;
+
+  background: var(--background-color-button);
+
+  transition: all 300ms;
+}
+
+footer button:hover {
+  filter: saturate(200%);
+}
+
+@media (max-width: 768px) {
+  :root {
+    font-size: clamp(30%,42%,62.5%);
+  }
+  
+  body,form, body::before {
+    width: 100%;
+    overflow: auto;
+  }
+
+  form {
+    overflow: hidden;
+  }
+  
+  #personalInformation legend {
+    width: 100%;
+  }
+  
+  #personalInformation .fullName {
+    flex-direction: column;
+    align-items: flex-start
+  }
+
+  #mentorInformation {
+    width: 100%;
+  }
+
+  #mentorInformation select {
+    width: 70%;
+  }
+
+  #schedulingNextMentorship {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  #schedulingNextMentorship .dateBox,
+  #schedulingNextMentorship .hourBox {
+    margin: 0;
+    width: 100%;
+  }
+}
